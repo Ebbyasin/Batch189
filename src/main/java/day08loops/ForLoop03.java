@@ -34,7 +34,8 @@ public class ForLoop03 {
         String unique="";
 
         for (int i= 0; i<t.length() ; i++){
-            char ch=t.charAt(i);
+            char ch=t.charAt(i); // burada ch variable ina atayarak asagidaki karsilastirma isini kolaylastirdik.
+            // alt tarafi alirken indexOf ve lastIndexOf u i olarak almak zorunda kalmamak icin,o zaman cozum olmuyor
 
             if (t.indexOf(ch)==t.lastIndexOf(ch)){
                 unique=unique+ch;
