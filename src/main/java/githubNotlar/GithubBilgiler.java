@@ -57,5 +57,6 @@ public class GithubBilgiler {
 //--yeni projede kodlarimizi acmak
 //--file ==> new ==> project from version control ==> buraya URL'yi(github linki) yapistirinca
 //--yeni projede kodlarimizi acmis oluyoruz
-    // bakalim bu degisikligi kaydedecek mi??
+    // bakalim bu degisikligi kaydedecek mi??kaydetmedi
+
 }
