@@ -20,7 +20,7 @@ public class ForLoops01 {
         }
          */
 
-        // Baslangic Degeri ; Loop calisma sarti  ;  Artirma / Azaltma
+        // Baslangic Degeri ; Loop calisma sarti  ;  Artirma / Azaltmak
 
 
         for(    int i=1     ;          i<6                   ;         i++         ){
