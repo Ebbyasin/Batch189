@@ -21,5 +21,7 @@ public class ArrayList01 {
         //ArrayListler nasil olusturulr?
         ArrayList< Integer > ages = new ArrayList<>();
 
+
+        //githuba göndermeyi denemek için
     }
 }
