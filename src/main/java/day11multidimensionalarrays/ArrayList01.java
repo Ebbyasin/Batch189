@@ -23,6 +23,6 @@ public class ArrayList01 {
 
 
         //githuba göndermeyi denemek için
-        //
+        //tekrar deneme
     }
 }
