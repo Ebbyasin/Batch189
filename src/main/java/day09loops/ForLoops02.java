@@ -18,7 +18,7 @@ public class ForLoops02 {
         //Stringe cevirmis oldugumuz sayiyi split() methodu ile bolerek ondalikli kismi alabiliriz
 
 
-        String decimalPart = sNum.split("[.]")[1];
+        String decimalPart = sNum.split("[.]")[1]; // ??? noktayi neden köseli paranteze aldik sor
 
         //String tipinde olan decimalPart uzerinde matematiksel islem yapabilmek icin int e cevirmeliyiz
         int intDecimalPart = Integer.valueOf(decimalPart);

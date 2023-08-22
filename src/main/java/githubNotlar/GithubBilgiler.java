@@ -1,5 +1,7 @@
 package githubNotlar;
 
+import java.util.Arrays;
+
 public class GithubBilgiler {
 
     //"git" version lar icin
@@ -58,5 +60,24 @@ public class GithubBilgiler {
 //--file ==> new ==> project from version control ==> buraya URL'yi(github linki) yapistirinca
 //--yeni projede kodlarimizi acmis oluyoruz
     // bakalim bu degisikligi kaydedecek mi??kaydetmedi
+
+    public static void main(String[] args) {
+        int numbers[][]= {{15, 4},{12,43,21}};
+        int small=numbers[0][0];
+        int max=numbers[0][0];
+
+        for (int [] w:numbers) {
+            for (int k:w) {
+                max=Math.max(max,k);
+                small=Math.min(small,k);
+
+
+            }
+        }
+        System.out.println(max);
+        System.out.println(small);
+
+
+    }
 
 }

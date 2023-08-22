@@ -34,7 +34,7 @@ public class DoWhileLoops01 {
                 break;
             }
             counter++;
-        }while (true);
+        }while (true);  //bunu nasil kullaniyoruz tekrar anlattir
 
     }
 }
