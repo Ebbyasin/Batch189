@@ -1,0 +1,71 @@
+package day13methodcreation_methodoverloading_varargs_passbyvalue;
+
+public class MethodOverloading01 {
+
+    public static void main(String[] args) {
+        add(3,5);
+
+        /*
+        aşagidaki methodlardan 1.sini kapatip yukarda iki int deger verirsek kullanabilecegi 3 tane
+        method kaliyor,(2,3 ve 4. methodlar)..onlarin hepsinde autowidening var,java 2.methodu direk
+        eliyor kafadan çunkü 3. ve 4. methodlarda 1 tane autoW. var.O ikisi arasinda kafa karisikligi
+        yasiyor,o yüzden yukarda 3 ve 5 in alti kizariyor.java orda şunu diyor,iki tane var hangisini
+        seceyim,bana yardim et...
+         */
+
+    }
+     // 1.method
+    public static void add(int a,int b){
+        System.out.println((a+b));
+    }
+
+
+   // }
+    // 2.method
+    public static void add(double a,double b){
+        System.out.println(a+b);
+
+    }
+    // 3.method
+    public static void add(double a,int b){
+        System.out.println(a+b);
+
+    }
+    //4.method
+    public static void add(int a,double b){
+        System.out.println(a+b);
+    }
+    // 5.method
+    public static void add(int a,int b,int c){
+        System.out.println(a+b+c);
+    }
+     /*
+    1)Method Overloading yaparken method ismi degistirilmez
+    2)Method Overloading yaparken parametreler degistirilir
+        a) Parametre degistirilirken parametrelerin data typelari degistirilebilir
+        b) Parametre degistirilirken parametrelerin data typelari farkli ise yer deegistirilebilir
+        c)  Parametre degistirilirken parametrelerin sayisi degistirilebilir
+    3) java icin ismi ve parametreleri ayni olan iki method tamamiyla aynidir
+       Bu yüzden ismi ve parametre Method Signature olarak adlandirilir
+
+    4) Method overloading olustururken return type i degistirmenin hicbir etkisi yoktur
+    5) Method overloading olustururken access modifier i degistirmenin hicbir etkisi yoktur
+    6) Method overloading olustururken static veya non-static yapmanin hicbir etkisi yoktur
+    7) Method overloading olustururken body i  degistirmenin hicbir etkisi yoktur
+
+    8) private methodlar overload edilebilir
+    private olmak baska classlara gidildiginde problem olur, biz overloading ayni classta yapariz
+
+    9) static methodlar overload edilebilir
+    overloading yapmak icin method isimini degistirmeden method signature i degistiririz, dolayisiyle method signature degistirildiginde
+    yeni bir method olusturmus oluruz bu nedenle static olmasi bir seyi degistirmez
+
+
+      */
+
+
+
+
+
+
+}
