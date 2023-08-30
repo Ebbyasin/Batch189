@@ -19,8 +19,9 @@ public class Varargs {
 
     //1) Bir method parantezinde birden fazla varargs kullanilmaz
     //2) Bir method parantezinde birden fazla parametre kullanilacaksa Varargs en sonda olmalidir
-
-
+    //3) ilk parametre varargs oldugunda dibi delik kova misali ne koyarsak alacagi icin ,dolmayacagi
+    // icin ikinci parametre kullanilamaz,dolayisiyla kullanilamayan kod hata verdirir.Kullanilamayan
+    // kod(unusable code-Anyusubıl kod)
     //Java farkli sayidaki parametrelerin hepsini kabul eden bir yapi olusturdu.
     //Bu yapiya Varargs diyoruz
     //Varargs arka planda Array yapisini kullanir

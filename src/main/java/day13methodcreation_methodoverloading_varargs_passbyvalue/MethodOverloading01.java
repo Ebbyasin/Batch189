@@ -1,6 +1,6 @@
 package day13methodcreation_methodoverloading_varargs_passbyvalue;
 
-public class MethodOverloading01 {
+public class  MethodOverloading01 {
 
     public static void main(String[] args) {
         add(3,5);
@@ -62,10 +62,6 @@ public class MethodOverloading01 {
 
 
       */
-
-
-
-
 
 
 }
