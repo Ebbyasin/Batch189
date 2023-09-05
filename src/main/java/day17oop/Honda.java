@@ -3,7 +3,7 @@ package day17oop;
 public class Honda extends Car {
 
     public Honda(){
-        System.out.println("super.km = " + super.km);
+        System.out.println("super.km = " + super.km); // burada super. şu demek:Bu class ta da km var ama ben parents takini istiyorum
         System.out.println("super.model = " + super.model);
         System.out.println("this.km = " + this.km);
         System.out.println("this.model = " + this.model);

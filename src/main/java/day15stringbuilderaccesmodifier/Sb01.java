@@ -23,14 +23,12 @@ public class Sb01 {
         degisimis degeri bu container in icine koyar ve eski container i gosteren pointer artik yeni container a yönlendiriliir
         Dolayisiyla eski container adressiz kalir ve "Garbage collector" adressiz olan containerlari siler
          */
-
         String a = "money";
         a = a + " more ";
 
 
         //Mutable
         //StringBuilder kullanarak string üretmenin 1. yolu
-
         StringBuilder sb1 = new StringBuilder("Python");
         sb1.append("!");
         System.out.println(sb1);
@@ -50,7 +48,6 @@ public class Sb01 {
 
 
         //capacitiy ve lentgh arasindaki fark nedir?
-
         /*
         capacity javanin size verdigi data depolama yer sayisidir,
         Length ise size verilen data depolama yerinin kullanilan kismidir
@@ -64,5 +61,6 @@ public class Sb01 {
 
         StringBuilder sb3 = new StringBuilder(3);
         sb3.append("ali");
+
     }
 }
