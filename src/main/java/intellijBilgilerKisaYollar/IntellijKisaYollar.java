@@ -16,10 +16,8 @@ public class IntellijKisaYollar {
          degistirebiliriz,hepsini..mesela bir variable ismini degiştirecegiz,en üsttekini seçip,
          alt+j ye her basışımızda aşagiya doğru hepsini secip baska bir isimle degistirebiliriz
      */
-     */
-     */
-     */
-     */
+
+
 
 
 
