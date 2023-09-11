@@ -37,6 +37,19 @@ public class Queues01 {
 
         //Double ended queu ==> iki uclu queue
         Deque<String> d=new LinkedList<>();
+        d.add("Milk");
+        d.add("Meat");
+        d.add("Egg");
+        d.add("Orange");
+        d.add("Tomatoes");
+        System.out.println(d); //[Milk, Meat, Egg, Orange, Tomatoes]-->insertior order
+
+        /*Ögrenci email lerini tutmak için set
+        * hiz lazimsa hashset
+        *yakalama sirasina göre linkedhash
+        * */
+
+
 
     }
 }
