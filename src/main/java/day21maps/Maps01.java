@@ -10,8 +10,8 @@ public class Maps01 {
                (tekrarsiz)       (tekrarli)
                 KEY          =     VALUE
     entry                                     entryset
-                Cat          =     Kedi
-                Dog          =     Köpek
+                Cat          =     Kedi       "cat=kedi" ifadeleri beraber entry dir
+                Dog          =     Köpek      sol tarafın tamamı entryset tir
                 Hard         =     Zor
                 Difficult    =     ZoR
 
