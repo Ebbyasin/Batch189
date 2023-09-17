@@ -3,10 +3,41 @@ package day23exception;
 public class ExceptionRunner {
 
     public static void main(String[] args) {
-       // getStudentGrade(77);
-       // getStudentGrade(-77);
-       // getStudentGrade(777);
-       // System.out.println("main method");
+
+        /*
+    Exception lar disinda Error diye adlandirdigimiz ve handle edilemeyen bazi problemler vardir
+     mesela application larda Memory nin dolmasi bir errordur
+        iki tur memory error vardir:
+        a) Stack memory dolarsa "StackOverFlow Error" alirsiniz
+        b) Heap memory dolarsa "OutOfMemory Error" alirsiniz
+
+        finalize:
+        Garbage collector memory i temiz tutmak icin surekli memoryi tarar ve silinmesi gerekenleri siler
+        Garbage collector silmeden once sileceği datalari "finalize" yapar sonra siler
+        yani Garbage collector sadece finalized yapilmis objeleri toplar ve yok eder
+
+        final - finally - finalize()
+
+        final:“final” bir keyword’tür. Variable, class ve methodlar için kullanılır.
+        bir class final sa inherit edilemiyor,cocugu olmuyor,artik constant oluyor ,sabitleniyor
+        final methodlar override edilemiyor
+
+        finally:“finally” bir code blocktur. try-catch veya sadece try ile kullanılır.
+        finally her halukarda ,try catch in sonucu ne olursa olsun calısırdı,dolabın kapisini kapat
+        mak gibi,database le connectionu kesmek gibi...
+
+
+         */
+
+
+
+
+
+
+       //   getStudentGrade(77);
+       //   getStudentGrade(-77);
+       //   getStudentGrade(777);
+       //   System.out.println("main method");
 
         getTheNumberOfStudents(15);
         getTheNumberOfStudents(-15);
