@@ -15,14 +15,25 @@ public class Lambda01 {
         System.out.println();
         printSquareOfOddElements(nums);
         System.out.println();
+        printCubeOfDistinctOddElements(nums);
+        System.out.println();
         printSumOfSquaresOfDistinctEvenElements(nums);
         System.out.println();
         printProductOfSquareOfDistinctEvenElements(nums);
         System.out.println();
         getMaxValue1(nums);
         System.out.println();
+        getMinValue1(nums);
+        System.out.println();
+        getMinValue2(nums);
+        System.out.println();
+        getMinValue3(nums);
+        System.out.println();
+        getMinValue4(nums);
+        System.out.println();
         getMinGreaterThanSevenEven(nums);
         System.out.println();
+
 
     }
 
@@ -120,8 +131,11 @@ public class Lambda01 {
                 stream().
                 distinct().
                 sorted().
-                reduce((t, u) -> u).
-                get();
+                reduce((t, u) -> u). // reduce parantezinde en başta identy tanımlanmazsa int döndürmez
+                get(); //burada Optional <java.lang.Integer> donduruyor,biz int donsun istiyoruz
+                       //bu bizim işimize yaramayacagı icin sonuna get ekliyoruz,int donduruyor
+                       //reduce methodunda parantez icinde ilk olarak identy tanımlamak gerekiyor,
+                       //biz burada identy tanımlamadan yaptığımız icin optional döndürüyor.
         System.out.println(max);
     }
 
@@ -154,7 +168,11 @@ public class Lambda01 {
         Integer min = nums.
                 stream().
                 distinct().
-                sorted(Comparator.reverseOrder()).
+                sorted(Comparator.reverseOrder()).//Comparator arayüzü Java Collections Framework'un
+                // bir üyesidir. Bir nesneler koleksiyonu üzerinde tümel sıralama (total ordering)
+                // yapar. Bunu yaparken Collections.sort() metodunu kullanabilir. Bu metot,
+                // collections içindeki sınıflara ait nesnelerden oluşan koleksiyonları doğal
+                // sıraya koyar.
                 reduce((t,u)->u).
                 get();
         System.out.println(min);
