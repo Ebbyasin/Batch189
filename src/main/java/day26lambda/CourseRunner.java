@@ -25,29 +25,31 @@ public class CourseRunner {
         // Course{season='Winter', courseName='English Night', averageScore=93, numberOfStudents=144}]
 
         //1)Tum "averageScore" larin 91 den buyuk olup olmadigini kontrol kodu yaziniz
-        boolean result1=courseList.stream().allMatch(t->t.getAverageScore()>91);
+        boolean result1 = courseList.stream().allMatch(t -> t.getAverageScore() > 91);
         System.out.println(result1);
 
-        //AllMatch methodu parantez icinde verilen sarta streamdeki tüm elemanlarin bu sarta uymasi durumunda true verir
+        //AllMatch methodu parantez icinde verilen sarta streamdeki tum elemanlarin bu sarta uymasi durumunda true verir
 
         //2)Tum kurslardaki ögrenci sayilarinin larin 100 den buyuk olup olmadigini kontrol kodu yaziniz
-
-        boolean result2=courseList.stream().allMatch(t->t.getNumberOfStudents()>100);
+        boolean result2 = courseList.stream().allMatch(t -> t.getNumberOfStudents() > 100);
         System.out.println(result2);
 
+
         //3)Kurs isimlerinden en az birinin "Turkish" kelimesini icerip icermedigini kontrol eden kodu yaziniz.
-        boolean result3=courseList.stream().anyMatch(t->t.getCourseName().contains("Turkish"));
+        boolean result3 = courseList.stream().anyMatch(t -> t.getCourseName().contains("Turkish"));
         System.out.println(result3);
 
         //AnyMatch methodu parantez icinde verilen sarta streamdeki herhangi bir elemanin bu sarta uymasi durumunda true verir
 
-        //4)dönem isimlerinden en az birinin "Summer" kelimesini icerip icermedigini kontrol eden kodu yaziniz.
-        boolean result4=courseList.stream().anyMatch(t->t.getSeason().contains("Summer"));
+        //4) sezon isimlerinden en az birinin "Summer" kelimesini icerip icermedigini kontrol eden kodu yaziniz.
+        boolean result4 = courseList.stream().anyMatch(t -> t.getSeason().contains("Summer"));
         System.out.println(result4);
 
-        //5) Kurs dönemleri icinde"Fall" döneminin hic bulunmadigini kontrol eden kodu yaziniz?
-        boolean result5=courseList.stream().noneMatch(t->t.getSeason().contains("Fall"));
+        //5) Kurs donemleri icinde "Fall" doneminin hic bulunmadigini kontrol eden kodu yaziniz.
+        boolean result5 = courseList.stream().noneMatch(t -> t.getSeason().contains("Fall"));
         System.out.println(result5);
+
+        //NoneMatch methodu parantez icinde verilen sarta streamdeki hicbir elemanin bu sarti saglamamasi durumunda true verir
 
         //6) Kurs isimleri icinde "German" isminin hic bulunmadigini kontrol eden kodu yaziniz.
         boolean result6=courseList.stream().noneMatch(t->t.getCourseName().contains("German"));
