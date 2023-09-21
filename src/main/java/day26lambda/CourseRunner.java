@@ -18,6 +18,8 @@ public class CourseRunner {
         courseList.add(courseEnglishDay);
         courseList.add(courseEnglishNight);
 
+
+
         //System.out.println(courseList);
         //[Course{season='Summer', courseName='Turkish Day', averageScore=97, numberOfStudents=128},
         // Course{season='Winter', courseName='Turkish Night', averageScore=98, numberOfStudents=154},
@@ -28,7 +30,7 @@ public class CourseRunner {
         boolean result1 = courseList.stream().allMatch(t -> t.getAverageScore() > 91);
         System.out.println(result1);
 
-        //AllMatch methodu parantez icinde verilen sarta streamdeki tum elemanlarin bu sarta uymasi durumunda true verir
+        //AllMatch methodu parantez icinde verilen sarta streamdeki tum elemanlarin  uymasi durumunda true verir.developer ve qa ler tarafından çok kullanılır.****
 
         //2)Tum kurslardaki ögrenci sayilarinin larin 100 den buyuk olup olmadigini kontrol kodu yaziniz
         boolean result2 = courseList.stream().allMatch(t -> t.getNumberOfStudents() > 100);
@@ -39,7 +41,7 @@ public class CourseRunner {
         boolean result3 = courseList.stream().anyMatch(t -> t.getCourseName().contains("Turkish"));
         System.out.println(result3);
 
-        //AnyMatch methodu parantez icinde verilen sarta streamdeki herhangi bir elemanin bu sarta uymasi durumunda true verir
+        //AnyMatch methodu parantez icinde verilen sarta streamdeki herhangi bir elemanin uymasi durumunda true verir.sadece bir tanesi uyuyorsa true verir
 
         //4) sezon isimlerinden en az birinin "Summer" kelimesini icerip icermedigini kontrol eden kodu yaziniz.
         boolean result4 = courseList.stream().anyMatch(t -> t.getSeason().contains("Summer"));

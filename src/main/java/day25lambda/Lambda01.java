@@ -1,5 +1,7 @@
 package day25lambda;
 
+import day26lambda.Utils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -209,6 +211,9 @@ public class Lambda01 {
                 get();
         System.out.println(min);
     }
+
+
+
 
 
 
